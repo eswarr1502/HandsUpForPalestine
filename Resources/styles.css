@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #005c0c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns everything to the left */
+    padding: 10px;
+}
+
+h1 {
+    margin-left: 15px; /* Space between logo and title */
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px; /* Adds space between logo and title */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Download Section */
+.download-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.download-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.download-section li {
+    margin: 10px 0;
+}
+
+.download-section a {
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.download-section a:hover {
+    color: #8b0000;
+}
+
+/* Image Gallery */
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Lightbox Modal */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80vh;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f50b16;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    }
+
+    .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    }
+
+    .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    }
+
+    .footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+    }
+
+    .footer-section ul {
+    list-style: none;
+    padding: 0;
+    }
+
+    .footer-section ul li {
+    margin: 5px 0;
+    }
+
+    .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    }
+
+    .footer-section ul li a:hover {
+    text-decoration: underline;
+    }
+
+    .social-icons img {
+    width: 30px;
+    margin: 5px;
+    }
+
+    .footer-bottom {
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #002244;
+    }
